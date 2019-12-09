@@ -34,4 +34,35 @@ public class Facet {
         points[2].rotateOZ(angle);
         points[3].rotateOZ(angle);
     }
+
+    public void multiplication(double k) {
+        points[0].multiplication(k);
+        points[1].multiplication(k);
+        points[2].multiplication(k);
+        points[3].multiplication(k);
+    }
+
+    public void travelOX(double x){
+        points[0].travelOX(x);
+        points[1].travelOX(x);
+        points[2].travelOX(x);
+        points[3].travelOX(x);
+    }
+    public void travelOY(double y){
+        points[0].travelOY(y);
+        points[1].travelOY(y);
+        points[2].travelOY(y);
+        points[3].travelOY(y);
+    }
+    public void travelOZ(double z){
+        points[0].travelOZ(z);
+        points[1].travelOZ(z);
+        points[2].travelOZ(z);
+        points[3].travelOZ(z);
+    }
+    public void travel(double x, double y, double z){
+        travelOX(x);
+        travelOY(y);
+        travelOZ(z);
+    }
 }

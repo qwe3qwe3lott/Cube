@@ -48,6 +48,12 @@ public class R3Vector {
         return new R3Vector(k*a.x, k*a.y, k*a.z);
     }
 
+    public void multiplication(double k){
+        x = k * x;
+        y = k * y;
+        z = k * z;
+    }
+
     public static double scalarMultiplication(R3Vector a, R3Vector b) {
         return a.x*b.x + a.y*b.y + a.z*b.z;
     }
@@ -58,6 +64,18 @@ public class R3Vector {
 
     public static R3Vector randomMultiplication(R3Vector a, R3Vector b, R3Vector c) {
         return new R3Vector(c.x*scalarMultiplication(a,b),c.y*scalarMultiplication(a,b),c.z*scalarMultiplication(a,b));
+    }
+
+    public void travelOX(double x){
+        this.x += x;
+    }
+
+    public void travelOY(double y){
+        this.y += y;
+    }
+
+    public void travelOZ(double z){
+        this.z += z;
     }
 
     public void travel(double x, double y, double z) {
