@@ -8,5 +8,8 @@ public class Main {
         a.show();
         a.rotate(90, 90, 90);
         a.show();
+        Cube cube = new Cube();
+        cube.multiplication(50);
+        Frame frame = new Frame(cube);
     }
 }

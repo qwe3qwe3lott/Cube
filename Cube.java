@@ -1,5 +1,7 @@
+import java.awt.*;
+
 public class Cube {
-    private Facet[] facets;
+    private static Facet[] facets;
     public Cube() {
         facets = new Facet[6];
         facets[0] = new Facet(new R3Vector(0,0,0), new R3Vector(1,0,0), new R3Vector(1,1,0), new R3Vector(0,1,0));
@@ -77,5 +79,14 @@ public class Cube {
         travelOX(x);
         travelOY(y);
         travelOZ(z);
+    }
+
+    public void draw(Graphics g){
+        facets[0].draw(g);
+        facets[1].draw(g);
+        facets[2].draw(g);
+        facets[3].draw(g);
+        facets[4].draw(g);
+        facets[5].draw(g);
     }
 }

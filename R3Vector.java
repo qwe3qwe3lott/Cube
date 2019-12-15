@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Scanner;
 public class R3Vector {
     Scanner in = new Scanner(System.in);
@@ -107,4 +108,5 @@ public class R3Vector {
         rotateOY(angleY);
         rotateOZ(angleZ);
     }
+
 }

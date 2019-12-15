@@ -1,4 +1,7 @@
+import java.awt.*;
+
 public class Facet {
+    private final int C = 200;
     private R3Vector[] points;
     //Color color;
     public Facet(R3Vector v1, R3Vector v2, R3Vector v3, R3Vector v4) {
@@ -64,5 +67,12 @@ public class Facet {
         travelOX(x);
         travelOY(y);
         travelOZ(z);
+    }
+    public void draw(Graphics g){
+        g.setColor(Color.BLACK);
+        g.drawLine((int)  Math.round(C-points[0].getX()), (int)  Math.round(C-points[0].getX()), (int)  Math.round(C-points[0].getY()),(int)  Math.round(C-points[0].getY()));
+        g.drawLine((int)  Math.round(C-points[1].getX()), (int)  Math.round(C-points[1].getX()), (int)  Math.round(C-points[1].getY()),(int)  Math.round(C-points[1].getY()));
+        g.drawLine((int)  Math.round(C-points[2].getX()), (int)  Math.round(C-points[2].getX()), (int)  Math.round(C-points[2].getY()),(int)  Math.round(C-points[2].getY()));
+        g.drawLine((int)  Math.round(C-points[3].getX()), (int)  Math.round(C-points[3].getX()), (int)  Math.round(C-points[3].getY()),(int)  Math.round(C-points[3].getY()));
     }
 }
