@@ -32,7 +32,7 @@ public class R3Vector {
     }
 
     public void showXYZ() {
-        System.out.println(getX());
+        System.out.println('(' + getX() + ',' + getY() + ',' + getX() + ')');
         System.out.println(getY());
         System.out.println(getZ());
     }

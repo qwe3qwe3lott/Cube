@@ -1,15 +1,15 @@
 public class Main {
-    public static void main(String[] args){
-        R3Vector v1 = new R3Vector(0,0,0);
-        R3Vector v2 = new R3Vector(1,0,0);
-        R3Vector v3 = new R3Vector(1,1,0);
-        R3Vector v4 = new R3Vector(0,1,0);
+    public static void main(String[] args) {
+        R3Vector v1 = new R3Vector(0, 0, 0);
+        R3Vector v2 = new R3Vector(1, 0, 0);
+        R3Vector v3 = new R3Vector(1, 1, 0);
+        R3Vector v4 = new R3Vector(0, 1, 0);
         Facet a = new Facet(v1, v2, v3, v4);
         a.show();
         a.rotate(90, 90, 90);
         a.show();
         Cube cube = new Cube();
         cube.multiplication(50);
-        Frame frame = new Frame(cube);
+        CubeFrame f = new CubeFrame(cube);
     }
 }
